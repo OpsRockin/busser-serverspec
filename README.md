@@ -1,5 +1,6 @@
 # <a name="title"></a> Busser::RunnerPlugin::Shindo
 
+[![Gem Version](https://badge.fury.io/rb/busser-shindo.png)](http://badge.fury.io/rb/busser-shindo)
 [![Build Status](https://travis-ci.org/OpsRockin/busser-shindo.png?branch=master)](https://travis-ci.org/OpsRockin/busser-shindo)
 
 A Busser runner plugin for the Shindo.

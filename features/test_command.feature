@@ -10,7 +10,7 @@ Feature: Test command
     Given a suite directory named "shindo"
 
   Scenario: A passing test suite
-    Given a file in suite "shindo" named "tests/shindo_tests.rb" with:
+    Given a file in suite "shindo" named "shindo_tests.rb" with:
     """
     Shindo.tests do
       returns(true) { true }
@@ -25,7 +25,7 @@ Feature: Test command
     And the exit status should be 0
 
   Scenario: A failing test suite
-    Given a file in suite "shindo" named "tests/shindo_tests.rb" with:
+    Given a file in suite "shindo" named "shindo_tests.rb" with:
     """
     Shindo.tests do
       returns(true) { true }

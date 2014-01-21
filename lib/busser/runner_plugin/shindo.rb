@@ -32,6 +32,6 @@ class Busser::RunnerPlugin::Shindo < Busser::RunnerPlugin::Base
     # runner = File.join(File.dirname(__FILE__), %w{.. serverspec runner.rb})
 
 #    run_ruby_script!("#{runner} #{suite_path('serverspec').to_s}")
-    run!("shindont tests")
+    run!("shindont #{suite_path('shindo')}")
   end
 end

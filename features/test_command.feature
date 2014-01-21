@@ -1,13 +1,13 @@
 Feature: Test command
-  In order to run tests written with serverspec
+  In order to run tests written with shindo
   As a user of Busser
-  I want my tests to run when the serverspec runner plugin is installed
+  I want my tests to run when the shindo runner plugin is installed
 
   Background:
-    Given a test BUSSER_ROOT directory named "busser-serverspec-test"
-    And a sandboxed GEM_HOME directory named "busser-serverspec-gem-home"
-    When I successfully run `busser plugin install busser-serverspec --force-postinstall`
-    Given a suite directory named "serverspec"
+    Given a test BUSSER_ROOT directory named "busser-shindo-test"
+    And a sandboxed GEM_HOME directory named "busser-shindo-gem-home"
+    When I successfully run `busser plugin install busser-shindo --force-postinstall`
+    Given a suite directory named "shindo"
 
   Scenario: A passing test suite
     Given a file in suite "serverspec" named "localhost/default_spec.rb" with:

@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'busser/serverspec/version'
+require 'busser/shindo/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'busser-serverspec'
-  spec.version       = Busser::Serverspec::VERSION
-  spec.authors       = ['HIGUCHI Daisuke']
-  spec.email         = ['d-higuchi@creationline.com']
-  spec.description   = %q{A Busser runner plugin for Serverspec}
+  spec.name          = 'busser-shindo'
+  spec.version       = Busser::Shindo::VERSION
+  spec.authors       = ['Yukihiko Sawanobori']
+  spec.email         = ['sawanoboriyu@higanworks.com']
+  spec.description   = %q{A Busser runner plugin for Shindo}
   spec.summary       = spec.description
-  spec.homepage      = 'https://github.com/cl-lab-k/busser-serverspec'
+  spec.homepage      = 'https://github.com/sawanoboly/busser-shindo'
   spec.license       = 'Apache 2.0'
 
   spec.files         = `git ls-files`.split($/)
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'busser'
 
-  spec.add_development_dependency 'serverspec'
+  spec.add_development_dependency 'shindo'
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake'

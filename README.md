@@ -1,30 +1,14 @@
-# <a name="title"></a> Busser::RunnerPlugin::Serverspec
+# <a name="title"></a> Busser::RunnerPlugin::Shindo
 
-[![Gem Version](https://badge.fury.io/rb/busser-serverspec.png)](http://rubygems.org/gems/busser-serverspec) [![Build Status](https://secure.travis-ci.org/cl-lab-k/busser-serverspec.png?branch=master)](https://travis-ci.org/cl-lab-k/busser-serverspec) [![Dependency Status](https://gemnasium.com/cl-lab-k/busser-serverspec.png)](https://gemnasium.com/cl-lab-k/busser-serverspec) [![Code Climate](https://codeclimate.com/github/cl-lab-k/busser-serverspec.png)](https://codeclimate.com/github/cl-lab-k/busser-serverspec)
-
-A Busser runner plugin for Serverspec
+A Busser runner plugin for Shindo
 
 ## <a name="installation"></a> Installation and Setup
 
-Please read the Busser [plugin usage][plugin_usage] page for more details.
+TODO: Write this.
 
 ## <a name="usage"></a> Usage
 
-Please put test files into [COOKBOOK]/test/integration/[SUITES]/serverspec/
-
-```cookbook
-`-- test
-    `-- integration
-        `-- default
-            `-- serverspec
-                |-- localhost
-                |   `-- httpd_spec.rb
-                `-- spec_helper.rb
-```
-
-### <a name="note"></a> Note
-
-Globbing pattern to match files is `"serverspec/*/*_spec.rb"`.
+TODO: Write this.
 
 ## <a name="development"></a> Development
 
@@ -43,15 +27,17 @@ example:
 
 ## <a name="authors"></a> Authors
 
-Created and maintained by [HIGUCHI Daisuke][author] (<d-higuchi@creationline.com>)
+
+Created and maintained by [Yukihiko Sawanobori][author] (<sawanoboriyu@higanworks.com>)
+(Original busser-serverspec) Created and maintained by [HIGUCHI Daisuke][author] (<d-higuchi@creationline.com>)
 
 ## <a name="license"></a> License
 
 Apache 2.0 (see [LICENSE][license])
 
 
-[author]:           https://github.com/cl-lab-k
-[issues]:           https://github.com/cl-lab-k/busser-serverspec/issues
-[license]:          https://github.com/cl-lab-k/busser-serverspec/blob/master/LICENSE
-[repo]:             https://github.com/cl-lab-k/busser-serverspec
+[author]:           https://github.com/sawanoboly
+[issues]:           https://github.com/sawanoboly/busser-shindo/issues
+[license]:          https://github.com/sawanoboly/busser-shindo/blob/master/LICENSE
+[repo]:             https://github.com/sawanoboly/busser-shindo
 [plugin_usage]:     http://docs.kitchen-ci.org/busser/plugin-usage

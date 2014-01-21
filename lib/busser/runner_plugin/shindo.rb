@@ -1,8 +1,9 @@
 # -*- encoding: utf-8 -*-
 #
+# Author:: Yukihiko Sawanobori (<sawanoboriyu@higanworks.com>)
 # Author:: HIGUCHI Daisuke (<d-higuchi@creationline.com>)
 #
-# Copyright (C) 2013, HIGUCHI Daisuke
+# Copyright (C) 2014, Yukihiko Sawanobori
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,11 +17,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-module Busser
+require 'busser/runner_plugin'
 
-  module Serverspec
+# A Busser runner plugin for Serverspec.
+#
+# @author HIGUCHI Daisuke <d-higuchi@creationline.com>
+#
+class Busser::RunnerPlugin::Serverspec < Busser::RunnerPlugin::Base
+  postinstall do
+    install_gem("shindo")
+  end
 
-    # Version string for the Serverspec Busser runner plugin
-    VERSION = "0.2.5"
+  def test
+    runner = File.join(File.dirname(__FILE__), %w{.. serverspec runner.rb})
+
+    run_ruby_script!("#{runner} #{suite_path('serverspec').to_s}")
   end
 end

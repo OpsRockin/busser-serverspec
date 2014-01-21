@@ -1,5 +1,7 @@
 # <a name="title"></a> Busser::RunnerPlugin::Shindo
 
+[![Build Status](https://travis-ci.org/OpsRockin/busser-shindo.png?branch=master)](https://travis-ci.org/OpsRockin/busser-shindo)
+
 A Busser runner plugin for the Shindo.
 
 The Shindo is simple depth first ruby testing.

@@ -19,18 +19,19 @@
 
 require 'busser/runner_plugin'
 
-# A Busser runner plugin for Serverspec.
+# A Busser runner plugin for Shindo.
 #
-# @author HIGUCHI Daisuke <d-higuchi@creationline.com>
+# @author Yukihiko Sawanobori (<sawanoboriyu@higanworks.com>)
 #
-class Busser::RunnerPlugin::Serverspec < Busser::RunnerPlugin::Base
+class Busser::RunnerPlugin::Shindo < Busser::RunnerPlugin::Base
   postinstall do
     install_gem("shindo")
   end
 
   def test
-    runner = File.join(File.dirname(__FILE__), %w{.. serverspec runner.rb})
+    # runner = File.join(File.dirname(__FILE__), %w{.. serverspec runner.rb})
 
-    run_ruby_script!("#{runner} #{suite_path('serverspec').to_s}")
+#    run_ruby_script!("#{runner} #{suite_path('serverspec').to_s}")
+    run!("shindont tests")
   end
 end

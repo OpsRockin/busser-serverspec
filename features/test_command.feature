@@ -10,50 +10,31 @@ Feature: Test command
     Given a suite directory named "shindo"
 
   Scenario: A passing test suite
-    Given a file in suite "serverspec" named "localhost/default_spec.rb" with:
+    Given a file in suite "shindo" named "tests/shindo_tests.rb" with:
     """
-    require 'serverspec'
-    require 'pathname'
-    include Serverspec::Helper::Exec
-    include Serverspec::Helper::DetectOS
-    RSpec.configure do |c|
-      c.before :all do
-        c.os = backend(Serverspec::Commands::Base).check_os
-      end
-    end
-
-    describe command( "echo 'hello'" ) do
-      it { should return_exit_status 0 }
-      it { should return_stdout 'hello' }
+    Shindo.tests do
+      returns(true) { true }
+      returns(false) { false }
     end
     """
-    When I run `busser test serverspec`
+    When I run `busser test shindo`
     Then the output should contain:
     """
-    2 examples, 0 failures
+    2 succeeded in
     """
     And the exit status should be 0
 
   Scenario: A failing test suite
-    Given a file in suite "serverspec" named "localhost/default_spec.rb" with:
+    Given a file in suite "shindo" named "tests/shindo_tests.rb" with:
     """
-    require 'serverspec'
-    require 'pathname'
-    include Serverspec::Helper::Exec
-    include Serverspec::Helper::DetectOS
-    RSpec.configure do |c|
-      c.before :all do
-        c.os = backend(Serverspec::Commands::Base).check_os
-      end
-    end
-
-    describe command( 'which uhoh-whatzit-called' ) do
-      it { should return_exit_status 0 }
+    Shindo.tests do
+      returns(true) { true }
+      returns(false) { true }
     end
     """
-    When I run `busser test serverspec`
+    When I run `busser test shindo`
     Then the output should contain:
     """
-    1 example, 1 failure
+    1 failed, 1 succeeded
     """
     And the exit status should not be 0

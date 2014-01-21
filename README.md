@@ -1,14 +1,31 @@
 # <a name="title"></a> Busser::RunnerPlugin::Shindo
 
-A Busser runner plugin for Shindo
+A Busser runner plugin for the Shindo.
+
+The Shindo is simple depth first ruby testing.
 
 ## <a name="installation"></a> Installation and Setup
 
-TODO: Write this.
+Put test which written using the Shindo to `test/integration/${suite_name}`directory.
+run ` kitchen verify`
+
+```
+test
+└── integration
+    └── ${suite_name}
+        └── shindo
+            └── example_tests.rb
+```
 
 ## <a name="usage"></a> Usage
 
-TODO: Write this.
+run ` kitchen verify`
+
+Your tests will run with `shindont` command automatically.
+
+How to write test using the Shindo?
+See here. [https://github.com/geemus/shindo](https://github.com/geemus/shindo).
+
 
 ## <a name="development"></a> Development
 

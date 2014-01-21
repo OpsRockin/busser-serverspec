@@ -7,7 +7,6 @@ The Shindo is simple depth first ruby testing.
 ## <a name="installation"></a> Installation and Setup
 
 Put test which written using the Shindo to `test/integration/${suite_name}`directory.
-run ` kitchen verify`
 
 ```
 test

@@ -74,7 +74,7 @@ Apache 2.0 (see [LICENSE][license])
 
 
 [author]:           https://github.com/sawanoboly
-[issues]:           https://github.com/sawanoboly/busser-shindo/issues
-[license]:          https://github.com/sawanoboly/busser-shindo/blob/master/LICENSE
-[repo]:             https://github.com/sawanoboly/busser-shindo
+[issues]:           https://github.com/OpsRockin/busser-shindo/issues
+[license]:          https://github.com/OpsRockin/busser-shindo/blob/master/LICENSE
+[repo]:             https://github.com/OpsRockin/busser-shindo
 [plugin_usage]:     http://docs.kitchen-ci.org/busser/plugin-usage

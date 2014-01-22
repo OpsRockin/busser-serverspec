@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['sawanoboriyu@higanworks.com']
   spec.description   = %q{A Busser runner plugin for Shindo}
   spec.summary       = spec.description
-  spec.homepage      = 'https://github.com/sawanoboly/busser-shindo'
+  spec.homepage      = 'https://github.com/OpsRockin/busser-shindo'
   spec.license       = 'Apache 2.0'
 
   spec.files         = `git ls-files`.split($/)

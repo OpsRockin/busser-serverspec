@@ -22,6 +22,6 @@ module Busser
   module Shindo
 
     # Version string for the Shindo Busser runner plugin
-    VERSION = "0.3.0"
+    VERSION = "0.3.1"
   end
 end

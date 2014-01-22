@@ -9,7 +9,7 @@ The Shindo is simple depth first ruby testing.
 
 ## <a name="installation"></a> Installation and Setup
 
-Put test which written using the Shindo to `test/integration/${suite_name}`directory.
+Put test which written using the Shindo to `test/integration/${suite_name}/shindo`directory.
 
 ```
 test
@@ -18,6 +18,24 @@ test
         └── shindo
             └── example_tests.rb
 ```
+
+### <a name="bundler_support"></a> Bundler(Gemfile) Support!
+
+
+Put Gemfile to `test/integration/${suite_name}/shindo`directory.
+
+Will run `bundle install` before running test.
+
+```
+test
+└── integration
+    └── ${suite_name}
+        └── shindo
+            ├── Gemfile   ## Here
+            └── example_tests.rb
+```
+
+
 
 ## <a name="usage"></a> Usage
 

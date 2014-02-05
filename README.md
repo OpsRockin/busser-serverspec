@@ -67,7 +67,7 @@ example:
 ## <a name="authors"></a> Authors
 
 
-Created and maintained by [Yukihiko Sawanobori][author] (<sawanoboriyu@higanworks.com>)
+Created and maintained by [Sawanobori Yukihiko][author] (<sawanoboriyu@higanworks.com>)
 (Original busser-serverspec) Created and maintained by [HIGUCHI Daisuke][author] (<d-higuchi@creationline.com>)
 
 ## <a name="license"></a> License

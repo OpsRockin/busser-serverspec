@@ -6,7 +6,7 @@ require 'busser/shindo/version'
 Gem::Specification.new do |spec|
   spec.name          = 'busser-shindo'
   spec.version       = Busser::Shindo::VERSION
-  spec.authors       = ['Yukihiko Sawanobori']
+  spec.authors       = ['Sawanobori Yukihiko']
   spec.email         = ['sawanoboriyu@higanworks.com']
   spec.description   = %q{A Busser runner plugin for Shindo}
   spec.summary       = spec.description

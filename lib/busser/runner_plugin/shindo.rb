@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 #
-# Author:: Yukihiko Sawanobori (<sawanoboriyu@higanworks.com>)
+# Author:: Sawanobori Yukihiko (<sawanoboriyu@higanworks.com>)
 # Author:: HIGUCHI Daisuke (<d-higuchi@creationline.com>)
 #
-# Copyright (C) 2014, Yukihiko Sawanobori
+# Copyright (C) 2014, Sawanobori Yukihiko
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ require 'busser/runner_plugin'
 
 # A Busser runner plugin for Shindo.
 #
-# @author Yukihiko Sawanobori (<sawanoboriyu@higanworks.com>)
+# @author Sawanobori Yukihiko (<sawanoboriyu@higanworks.com>)
 #
 class Busser::RunnerPlugin::Shindo < Busser::RunnerPlugin::Base
   postinstall do

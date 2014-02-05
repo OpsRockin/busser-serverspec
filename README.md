@@ -2,6 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/busser-shindo.png)](http://badge.fury.io/rb/busser-shindo)
 [![Build Status](https://travis-ci.org/OpsRockin/busser-shindo.png?branch=master)](https://travis-ci.org/OpsRockin/busser-shindo)
+[![Dependency Status](https://gemnasium.com/OpsRockin/busser-shindo.png)](https://gemnasium.com/OpsRockin/busser-shindo)
 
 A Busser runner plugin for the Shindo.
 

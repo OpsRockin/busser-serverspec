@@ -1,3 +1,7 @@
+## 0.3.2
+
+- should put tests at `tests` directory.
+
 ## 0.3.1
 
 - fix path to source code.

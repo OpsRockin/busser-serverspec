@@ -24,6 +24,21 @@ Feature: Test command
     """
     And the exit status should be 0
 
+  Scenario: A passing test suite using helper
+    Given a file in suite "shindo" named "tests/helper.rb" with:
+    """
+    Shindo.tests do
+      returns(true) { true }
+      returns(false) { false }
+    end
+    """
+    When I run `busser test shindo`
+    Then the output should contain:
+    """
+    2 succeeded in
+    """
+    And the exit status should be 0
+
   Scenario: A failing test suite
     Given a file in suite "shindo" named "tests/shindo_tests.rb" with:
     """

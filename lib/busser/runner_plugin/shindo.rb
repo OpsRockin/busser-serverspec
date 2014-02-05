@@ -32,7 +32,6 @@ class Busser::RunnerPlugin::Shindo < Busser::RunnerPlugin::Base
   def test
     ## Refered from busser-rspec
     gemfile_path = File.join(suite_path, 'shindo', 'Gemfile')
-    tests_path = File.join(suite_path, 'shindo', 'tests')
     if File.exists?(gemfile_path)
     # Bundle install local completes quickly if the gems are already found locally
     # it fails if it needs to talk to the internet. The || below is the fallback
@@ -44,6 +43,6 @@ class Busser::RunnerPlugin::Shindo < Busser::RunnerPlugin::Base
     end
 
     banner('run shindont')
-    run!("env PATH=#{ENV['PATH']}:#{Gem.bindir} shindont #{tests_path}")
+    run!("cd #{suite_path('shindo')} && env PATH=#{ENV['PATH']}:#{Gem.bindir} shindont")
   end
 end
